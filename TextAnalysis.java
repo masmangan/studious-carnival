@@ -35,7 +35,7 @@ public class TextAnalysis {
 		try (BufferedReader reader = Files.newBufferedReader(path1, Charset.forName("utf8"))) {
 			String line;
 			while ((line = reader.readLine()) != null) {
-				line = line.toLowerCase().replaceAll("[^a-zA-Záéíóúçãõà-]"," ");
+				line = line.toLowerCase().replaceAll("[^a-zA-Záéíóúçãõàâêô-]"," ");
 				// aqui vc tem de fazer...
 				System.out.println(line);
 
